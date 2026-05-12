@@ -200,28 +200,3 @@ From each service directory:
 Email:    testuser@test.com
 Password: password123
 ```
-
-The patient service includes seeded patient records so the system can be demoed without manual bootstrapping.
-
-## Testing and Demo Assets
-
-### Integration tests
-
-```bash
-cd integration-test
-./mvnw test
-```
-
-Covers authentication via the gateway and patient retrieval with a valid JWT.
-
-### Request collections
-
-- [api-requests](api-requests) — HTTP calls (IntelliJ HTTP Client or similar)
-- [grpc-requests](grpc-requests) — gRPC calls
-
-## Known Limitations
-
-- No single-command local orchestration (e.g. `docker-compose.yml`) at the repo root.
-- Service configuration is environment-dependent; a standardized `.env` or config setup would improve the developer experience.
-- The infrastructure module is better treated as an architecture reference than a plug-and-play local experience.
-- Observability, centralized config, and service discovery are not yet implemented.
