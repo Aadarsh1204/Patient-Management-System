@@ -26,7 +26,7 @@ The result is a project that demonstrates several real-world backend patterns in
 
 ## Architecture Diagram
 
-![1778608448032](image/README/1778608448032.png)
+![Architecture Diagram](image/README/Architecture_Diagram.png)
 
 ## System Flow
 
